@@ -20,6 +20,14 @@ body {
 		width: 100%;
 	}
 
+	#block-2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 90%;
+	}
+
 	#profile-img {
 		box-shadow: 10px 10px black;
 		max-width: 45%;
@@ -27,7 +35,7 @@ body {
 
 	#encabezado {
 		font-family: 'Crete Round', serif;
-		font-size: 3em;
+		font-size: 3em - 20%;
 		text-align: center;
 	}
 
@@ -36,9 +44,9 @@ body {
 		width: 90%;
 	}
 
-	#resumen p {
+	#block-2, #resumen p{
 		font-family: 'Fira Sans', serif;
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 
 	#media {
@@ -52,6 +60,76 @@ body {
 		display: block;
 		margin: 0 auto;
 		max-width: 30%;
+	}
+
+	#works {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.work-img {
+		display: block;
+		padding-top: 10px;
+		max-width: 100%;
+	}
+
+	.work-section {
+		margin: 0 auto;
+		position: relative;
+		width: 90%;
+	}
+
+/* Efecto de Hover en Trabajos */
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #008CBA;
+	}
+
+	.work-section:hover .overlay {
+		opacity: 1;
+	}
+
+	.text {
+		color: white;
+		font-family: 'Fira Sans', serif;
+		font-size: 1.4em;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	/* Efecto de Hover en Trabajos */
+
+	#resumen a:link {
+		color: #006699;
+		text-decoration: none;
+	}
+
+	#resumen a:visited {
+		color: #3300ff;
+	}
+
+	#block-2 a:link {
+		color: #006699;
+		text-decoration: none;
+	}
+
+	#block-2 a:visited {
+		color: #3300ff;
 	}
 
 	footer {
@@ -86,13 +164,22 @@ body {
 		display: none;
 	}
 
-	#encabezado {
-		font-family: 'Crete Round', serif;
-		font-size: 3em;
-	}
-
 	#block-1 {
 		width: 100%;
+	}
+
+	#block-2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	#encabezado {
+		display: inline;
+		font-family: 'Crete Round', serif;
+		font-size: 3em;
 	}
 
 	#resumen p {
@@ -112,6 +199,81 @@ body {
 		display: block;
 		margin: 0 auto;
 		max-width: 30%;
+	}
+
+	#works {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.work-img {
+		display: block;
+		margin: 0 auto;
+		padding-top: 10px;
+		max-width: 90%;
+	}
+
+	.work-section {
+		position: relative;
+		width: 50%;
+	}
+
+/* Efecto de Hover en Trabajos */
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #008CBA;
+	}
+
+	.work-section:hover .overlay {
+		opacity: 1;
+	}
+
+	.text {
+		color: white;
+		font-family: 'Fira Sans', serif;
+		font-size: 1.4em;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	/* Efecto de Hover en Trabajos */
+
+	#block-2, #resumen p{
+		font-family: 'Fira Sans', serif;
+		font-size: 1.3em;
+	}
+
+	#resumen a:link {
+		color: #006699;
+		text-decoration: none;
+	}
+
+	#resumen a:visited {
+		color: #3300ff;
+	}
+
+	#block-2 a:link {
+		color: #006699;
+		text-decoration: none;
+	}
+
+	#block-2 a:visited {
+		color: #3300ff;
 	}
 
 	footer {
@@ -164,12 +326,6 @@ body {
 		width: 80%;
 	}
 
-	#works {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		}
-
 	#profile-img {
 		box-shadow: 10px 10px black;
 		display: block;
@@ -177,49 +333,56 @@ body {
 		max-width: 75%;
 	}
 
-	.work-img {
-		display: block;
-		padding-top: 10px;
-		max-width: 100%;
+	#works {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 
+	.work-img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		padding-top: 10px;
+	}
 
-.work-section {
-  position: relative;
- 
-}
+	.work-section {
+		position: relative;
+	}
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
+/* Efecto de Hover en Trabajos */
 
-.work-section:hover .overlay {
-  opacity: 1;
-}
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #008CBA;
+	}
 
-.text {
-  color: white;
-  font-family: 'Fira Sans', serif;
-  font-size: 1.5em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+	.work-section:hover .overlay {
+		opacity: 1;
+	}
 
+	.text {
+		color: white;
+		font-family: 'Fira Sans', serif;
+		font-size: 1.5em;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
 
+	/* Efecto de Hover en Trabajos */
 
 	#encabezado {
 		display: inline;
