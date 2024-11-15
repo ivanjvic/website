@@ -22,6 +22,7 @@ body {
 
 	#block-2 {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		margin: 0 auto;
@@ -33,18 +34,30 @@ body {
 		max-width: 45%;
 	}
 
-	#encabezado-gd {
+	.encabezado-gd {
 		font-family: 'Crete Round', serif;
 		font-size: 3em - 20%;
 		text-align: center;
 	}
+
+	.encabezado-pq {
+		font-family: 'Crete Round', serif;
+		font-size: 1.3em;
+		text-align: center;
+		text-wrap: balance;
+	}
+
+	#breadcrumb {
+		margin: 0 auto;
+		padding: 0 0 5% 0;
+}
 
 	#block-1 {
 		margin: 0 auto;
 		width: 90%;
 	}
 
-	#block-2, #resumen p{
+	#block-2, #block-4 p, #block-4 ul, #resumen p{
 		font-family: 'Fira Sans', serif;
 		font-size: 1.3em;
 	}
@@ -78,6 +91,11 @@ body {
 		margin: 0 auto;
 		position: relative;
 		width: 90%;
+	}
+
+	#resume-work {
+		margin: 0 auto;
+		width: 85%;
 	}
 
 /* Efecto de Hover en Trabajos */
@@ -176,10 +194,22 @@ body {
 		width: 80%;
 	}
 
-	#encabezado-gd {
+	.topnav {
+		display: none;
+	}
+
+	.encabezado-gd, .encabezado-pq {
 		display: inline;
 		font-family: 'Crete Round', serif;
+	}
+
+	.encabezado-gd {
 		font-size: 3em;
+	}
+
+	.encabezado-pq {
+		font-size: 1.1em;
+		text-wrap: balance;
 	}
 
 	#resumen p {
@@ -253,9 +283,14 @@ body {
 
 	/* Efecto de Hover en Trabajos */
 
-	#block-2, #resumen p{
+	#block-2, #block-4, #resumen p{
 		font-family: 'Fira Sans', serif;
 		font-size: 1.3em;
+	}
+
+	#breadcrumb {
+
+		text-wrap: balance;
 	}
 
 	#resumen a:link {
@@ -324,6 +359,10 @@ body {
 		align-items: center;
 		justify-content: space-between;
 		width: 80%;
+	}
+
+	.topnav {
+		display: none;
 	}
 
 	#resume-work {
@@ -403,16 +442,16 @@ body {
 
 	/* Efecto de Hover en Trabajos */
 
-	#encabezado-gd, #encabezado-pq {
+	.encabezado-gd, .encabezado-pq {
 		display: inline;
 		font-family: 'Crete Round', serif;
 	}
 
-	#encabezado-gd {
+	.encabezado-gd {
 		font-size: 3em;
 	}
 
-	#encabezado-pq {
+	.encabezado-pq {
 		font-size: 1.5em;
 	}
 
