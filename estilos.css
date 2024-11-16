@@ -150,6 +150,11 @@ body {
 		color: #3300ff;
 	}
 
+	#resume-work video {
+		width: 100%;
+	}
+
+
 	footer {
 		background-color: #000;
 		color: #fff;
@@ -361,12 +366,22 @@ body {
 		width: 80%;
 	}
 
-	.topnav {
-		display: none;
+	#block-2, #block-3, #block-4, #resumen p{
+		font-family: 'Fira Sans', serif;
+		font-size: 1.3em;
+	}
+
+	#block-4 p {
+		padding: 0 0 0 5%;
+	}
+
+	#block-4 ul {
+		padding: 0 0 0 10%;
 	}
 
 	#resume-work {
 		display: flex;
+		align-items: flex-start;
 		justify-content: space-around;
 	}
 
@@ -439,7 +454,6 @@ body {
 		color: #3300ff;
 	}
 
-
 	/* Efecto de Hover en Trabajos */
 
 	.encabezado-gd, .encabezado-pq {
@@ -453,19 +467,7 @@ body {
 
 	.encabezado-pq {
 		font-size: 1.5em;
-	}
-
-	#block-2, #block-3, #block-4, #resumen p{
-		font-family: 'Fira Sans', serif;
-		font-size: 1.3em;
-	}
-
-	#block-4 p {
-		padding: 0 0 0 5%;
-	}
-
-	#block-4 ul {
-		padding: 0 0 0 10%;
+		text-wrap: balance;
 	}
 
 	#resumen a:link {
@@ -505,6 +507,10 @@ body {
 
 	#media a img:hover {
 		filter: drop-shadow(2px 5px 3px);
+	}
+
+	#resume-work video {
+		width: 25%;
 	}
 
 	footer {
