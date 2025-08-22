@@ -8,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-	<meta name="description" content="Te ayudo a gestionar la presencia de tu negocio en las Redes Sociales y en la Web.">
+	<meta name="description" content="Te ayudo a gestionar la presencia de tu negocio en las Redes Sociales y en la Web">
 	<title>Ivan Vicente - Redes Sociales, Fotografía y Diseño Web</title>
 </head>
 
@@ -26,9 +26,33 @@
 
 		<main>
 			<div id="resume-work">
-				<div>
-					<img class="work-img" src="images/only-wp.png">
+
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<img class="work-img" src="images/only-wp01.png">
+						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+						<img class="work-img" src="images/only-wp02.png">
+						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+						<img class="work-img" src="images/only-wp03.png">
+						<div class="text"></div>
+					</div>
+
+					<!-- Botones de siguiente y previo -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 				</div>
+
 				<div id="block-4">
 					<p>Dise&ntildeo de im&aacutegenes para el cat&aacutelogo de WhatsApp de <a href="https://jupitermaturin.com/">Jupiter Maturin</a>, realizando para ello lo siguiente:</p>
 					<ul>
@@ -36,9 +60,12 @@
 						<li>Redacci&oacuten de Copy con la descripci&oacuten y principales caracter&iacutesticas de cada uno de los productos del cat&aacutelogo.</li><br>
 						<li>Fotograf&iacutea de cada uno de los productos del cat&aacutelogo.</li><br>
 					</ul>
-					<p>Si lo deseas, puedes escribirme al correo <b>ivanjvic@gmail.com</b></p>
+
+					<p>Para mas informaci&oacuten, puedes escribirme al correo <b>ivanjvic@gmail.com</b></p>
+				
 				</div>
 			</div>
+		
 		</main>
 		
 		<div id="media">
@@ -53,7 +80,7 @@
 	
 	</div>
 
-		<script>
+	<script>
 		function myFunction() {
 			var x = document.getElementById("myLinks");
 			if (x.style.display === "block") {
@@ -63,5 +90,8 @@
 			}
 		}
 	</script>
+
+	<script type="text/javascript" src="app.js"></script>
+
 </body>
 </html>
